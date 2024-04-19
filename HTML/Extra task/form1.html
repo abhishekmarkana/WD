@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+
+    <style>
+        * {
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+
+        input,
+        textarea,
+        select {
+            background-color: aliceblue;
+            color: black;
+            margin: 5px;
+
+        }
+
+        caption {
+            background-color: rgba(44, 53, 182, 0.8);
+            height: 50px;
+            font-size: 40px;
+            color: rgb(172, 174, 226);
+        }
+
+        fieldset {
+
+            border: dashed black;
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <table align="center">
+                <caption>
+                    Student Registration
+                </caption>
+
+
+
+
+                <tr>
+                    <td><label for="">First Name</label></td>
+                    <td><input type="text" placeholder="enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name</label></td>
+                    <td><input type="text" placeholder="enter your last name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email ID</label></td>
+                    <td><input type="email" placeholder="enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobaile Number</label></td>
+                    <td><input type="tel" placeholder="enter your contect number"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td><input type="radio" name="gen">Male <input type="radio" name="gen">Female</td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth(DOB)</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</label></td>
+                    <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="">City</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Pin Code</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Country</label></td>
+                    <td><select name="" id="">
+                            <option value="">India</option>
+                            <option value="">U.S.A.</option>
+                            <option value="">U.K</option>
+                            <option value="">U.A.E.</option>
+                            <option value="">Pakistan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Hobbies</label></td>
+                    <td><input type="checkbox">Drawing
+                        <input type="checkbox">Singing
+                        <input type="checkbox">Dancing
+                        <input type="checkbox">Sketchting <br>
+                        <input type="checkbox">Other <input type="text" placeholder="Ex- Teaching"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="5"><label for="">Qualifications</label></td>
+                    <td><input type="checkbox">High School (10<sup>th</sup> )</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Higher School (12<sup>th</sup>)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Gradution (Bachelors)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Post Gradution (Masters)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Phd</td>
+                </tr>
+
+
+                <tr>
+                    <td rowspan="9">Courses Applied For</td>
+                    <td><input type="checkbox">BCA</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> B.Com</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox">B.Sc</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> BA</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> MCA</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> M.Com</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> M.Sc</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"> MA</td>
+                </tr>
+
+                <tr>
+                    <td><input type="reset">
+                        <input type="submit">
+                    </td>
+                </tr>
+
+
+
+
+
+            </table>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form5</title>
+
+
+</head>
+
+<body>
+    <h1>Membership Application</h1>
+    <p>
+        To apply for membership please complete all question.
+    </p>
+    <hr>
+    <form action="">
+        <table>
+            <tr>
+                <th><label for="Name">Name</label></th>
+                <td>
+                    <input type="text" pattern="[A-Za-z]+" minlength="3" maxlength="10"
+                        required><br><sup>FirstName</sup>
+                </td>
+                <td>
+                    <input type="text" pattern="[A-Za-z]+" minlength="3" maxlength="10" required><br><sup>
+                        Last Name</sup>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="4">
+                    <label for="Address">Address</label>
+                </th>
+                <td colspan="2">
+                    <input type="text" pattern="[A-Za-z0-9]+" minlength="3" maxlength="50" required><br><sup>Street
+                        Address</sup>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" size="50" pattern="[A-Za-z]+" minlength="3" maxlength="50"
+                        required><br><sup>Address Line 2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" pattern="[A-Za-z]+" minlength="3" maxlength="10" required><br><sup>City</sup>
+                </td>
+                <td>
+                    <input type="text" pattern="[A-Za-z]+" minlength="3" maxlength="10" required><br><sup>State</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" size="10" pattern="[0-9]+" minlength="3" maxlength="6" required><br><sup>Zip
+                        Code</sup>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">Pleace Select</option>
+                        <option value="">India</option>
+                        <option value="">U.K.</option>
+                        <option value="">U.A.E.</option>
+                        <option value="">Canada</option>
+                        <option value="">Pakistan</option>
+                    </select><br><sup>Country</sup>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th><label for="">E-mail</label></th>
+                <td> <input type="email" placeholder="ex: myname@example.com"></td>
+            </tr>
+
+            <tr>
+                <th><label for="">Home Number</label></th>
+                <td><input type="text" size="10" pattern="[0-9]+" minlength="3" maxlength="6" required><br><sup>Area
+                        Code</sup></td>
+                Number</sup>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="">Cellular Number</label></th>
+                <td><input type="text" size="10" pattern="[0-9]+" minlength="3" maxlength="6" required><br><sup>Area
+                        Code</sup></td>
+                <td><input type="tel" pattern="[0-9]+" minlength="3" maxlength="10" required><br><sup>Phonr Number</sup>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="">Work Number</label></th>
+                <td><input type="text" size="10" pattern="[0-9]+" minlength="3" maxlength="6" required><br><sup>Area
+                        Code</sup></td>
+                <td><input type="tel" pattern="[0-9]+" minlength="3" maxlength="10" required><br><sup>Phonr Number</sup>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="">Website</label></th>
+                <td colspan="2"><input type="text" size="50"></textarea></td>
+            </tr>
+
+
+
+
+        </table>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
