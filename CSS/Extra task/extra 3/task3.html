@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            height: 750px;
+            width: auto;
+            background-color: rgb(238, 199, 7);
+            ;
+        }
+
+        .nav {
+            height: auto;
+            width: auto;
+            background-color: rgb(248, 164, 10);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .logo {
+            height: 100px;
+            width: 300px;
+            border: 2px dotted wheat;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        ul {
+            display: flex;
+            gap: 80px;
+        }
+
+        ul li,
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            font-size: larger;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: rgb(113, 95, 4);
+        }
+
+        .search {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mgni {
+            height: 35px;
+            width: 40px;
+            color: white;
+            background-color: rgb(9, 158, 158);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ::placeholder {
+            color: white;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+
+        input {
+            height: 35px;
+            width: 200px;
+            background-color: rgb(238, 199, 7);
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .main-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width: auto;
+            gap: 80px;
+        }
+
+        .cantaint {
+            height: 500px;
+            width: 40%;
+        }
+
+        h2 {
+            padding: 50px;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        p {
+            padding-left: 50px;
+            padding-right: 50px;
+            color: white;
+        }
+
+        .btn {
+            height: 40px;
+            width: auto;
+            margin-top: 30px;
+            display: flex;
+            padding-left: 50px;
+            gap: 50px;
+        }
+
+        .btn1 {
+            height: auto;
+            width: 150px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn1:hover {
+            background-color: rgb(248, 164, 10);
+            border: 2px solid rgb(248, 164, 10);
+        }
+
+        .img {
+            height: 500px;
+            width: 30%;
+            background: url(dog-12.png);
+            background-size: cover;
+
+        }
+
+        .img:hover {
+            transform: translate(-20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">logo</div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search"><input type="text" placeholder="search....">
+                <div class="mgni"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+
+        <div class="main-2">
+            <div class="cantaint">
+
+                <h2>First I Wanted to be a veterinarian</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a eos nobis debitis facilis
+                    magni vero possimus illum, odit corrupti maiores aut commodi veritatis beatae culpa id ratione
+                    quos expedita?
+                </p>
+                <div class="btn">
+                    <div class="btn1 ">Contact us</div>
+                    <div class="btn1">Our Service</div>
+                </div>
+
+            </div>
+            <div class="img"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

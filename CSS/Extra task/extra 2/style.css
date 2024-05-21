@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/tree-lake-reflection-water-calm-tranquil-scene-night-sky-stars-beautiful\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 40px;
+    font-family: Arial;
+    margin-left: 70px;
+    float: left;
+    padding-top: 20px;
+}
+
+.nav-list {
+    width: 700px;
+    margin-left: 150px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+
+.nav-list a {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.nav-bar a:hover {
+    color: #ff7200;
+}
+
+.nav-search {
+    width: 330px;
+    margin-left: 100px;
+    padding-top: 10px;
+    float: left;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 8px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 8px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin-left: 60px;
+    color: #fff;
+    position: relative;
+}
+
+.content .per {
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    margin-top: 9%;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background: #fff;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 60px;
+}
+
+.form {
+    width: 300px;
+    height: 430px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 1090px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 250px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btn-2 {
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.btn-2:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+.btn-2 a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons i {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: .3s ease;
+}
+
+.icons i:hover {
+    color: #ff7200;
+}
