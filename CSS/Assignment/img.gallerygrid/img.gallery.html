@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: auto;
+            height: auto;
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img-main {
+            width: 85%;
+            display: grid;
+            gap: 12px;
+        }
+
+        .img-main div {
+            height: 250px;
+            width: auto;
+            font-size: 50px;
+        }
+
+        .img1 {
+            grid-column: 1/ span 4;
+            grid-row: 1;
+            background: url(/img/images1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+        }
+
+        .img2 {
+            grid-column: 5 / 7;
+            grid-row: 1;
+            background: url(/img/images2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img3 {
+            grid-column: 1 / 2;
+            grid-row: 2;
+            background: url(/img/images3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .img4 {
+            grid-column: 2 / 6;
+            grid-row: 2;
+            background: url(/img/images4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img5 {
+            grid-column: 6 / 7;
+            grid-row: 2;
+            background: url(/img/images5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img6 {
+            grid-column: 1 /span 3;
+            grid-row: 3;
+            background: url(/img/images6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img7 {
+            grid-column: 4/ span 3;
+            grid-row: 3;
+            background: url(/img/images7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img8 {
+            grid-column: 1/ span 2;
+            grid-row: 4;
+            background: url(/img/images8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img9 {
+            grid-column: 3 / span 2;
+            grid-row: 4;
+            background: url(/img/images9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img10 {
+            grid-column: 5/span 2;
+            grid-row: 4;
+            background: url(/img/images10.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* shutter */
+        .shutter {
+            background-color: #000;
+            height: auto;
+            width: 15%;
+            color: #fff;
+            text-align: right;
+            padding-top: 60px;
+            padding-right: 20px;
+        }
+
+        ul li,
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            padding-top: 20px;
+
+            transition: .2s ease-in-out;
+        }
+
+        a:hover {
+            color: #cf5d34;
+        }
+
+        .icon {
+            margin-top: 50px;
+        }
+
+        a i {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="img-main">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+            <div class="img5"></div>
+            <div class="img6"></div>
+            <div class="img7"></div>
+            <div class="img8"></div>
+            <div class="img9"></div>
+            <div class="img10"></div>
+        </div>
+        <div class="shutter">
+            <h3>SHUTTER</h3>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PHOTOS</a></li>
+                <li><a href=""> BIO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <div class="icon">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

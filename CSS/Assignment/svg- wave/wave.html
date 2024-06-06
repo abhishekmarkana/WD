@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 730px;
+            width: 100%;
+            background: url(/images.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .wave {
+            width: 100%;
+            position: absolute;
+            bottom: -10px;
+        }
+
+        .img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        .img {
+            /* display: none; */
+        }
+
+        .img:hover .tag {
+            /* box-shadow: 0px 0px 10px rgb(202, 117, 117); */
+            display: block;
+        }
+
+
+        .img1 {
+            left: 200px;
+            bottom: 200px;
+            background: url(/images1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .img2 {
+            left: 440px;
+            bottom: 180px;
+            background: url(/images2.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img3 {
+            left: 650px;
+            bottom: 180px;
+            background: url(/images\ 3.jpeg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .img4 {
+            right: 600px;
+            bottom: 240px;
+            background: url(/images4.jpeg);
+            background-size: cover;
+        }
+
+        .img5 {
+            right: 350px;
+            bottom: 280px;
+            background: url(/images5.jpeg   );
+            background-size: cover;
+            background-position: center;
+        }
+
+        .had {
+            position: absolute;
+            color: aliceblue;
+            left: 35%;
+            top: 200px;
+            text-align: center;
+        }
+
+        .tag {
+            width: 130px;
+            color: #fff;
+            position: absolute;
+            top: 100px;
+            left: -30px;
+            display: none;
+
+        }
+
+
+        h1,
+        h5 {
+            margin: 20px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="had">
+            <h1>OUR TEAM</h1>
+            <h5>Meet the craziest team. Share your thoughts with them.</h5>
+        </div>
+
+        <div class="img1 img">
+            <div class="tag">
+                <h4>WEB DESIGNER</h4><br>
+                <p>UI/UX DESIGNER</p>
+            </div>
+
+        </div>
+        <div class="img2 img">
+            <div class="tag">
+                <h4>WEB DESIGNER</h4><br>
+                <p>UI/UX DESIGNER</p>
+            </div>
+        </div>
+        <div class="img3 img">
+            <div class="tag">
+                <h4>WEB DESIGNER</h4><br>
+                <p>UI/UX DESIGNER</p>
+            </div>
+        </div>
+        <div class="img4 img">
+            <div class="tag">
+                <h4>WEB DESIGNER</h4><br>
+                <p>UI/UX DESIGNER</p>
+            </div>
+        </div>
+        <div class="img5 img">
+            <div class="tag">
+                <h4>WEB DESIGNER</h4><br>
+                <p>UI/UX DESIGNER</p>
+            </div>
+        </div>
+
+        <div class="wave"><svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390"
+                xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+                <path
+                    d="M 0,400 L 0,150 C 121.64285714285714,159.64285714285714 243.28571428571428,169.28571428571428 351,180 C 458.7142857142857,190.71428571428572 552.5,202.5 663,182 C 773.5,161.5 900.7142857142858,108.71428571428572 1033,98 C 1165.2857142857142,87.28571428571428 1302.642857142857,118.64285714285714 1440,150 L 1440,400 L 0,400 Z"
+                    stroke="#fff" stroke-width="2" fill="#fff " fill-opacity="0.1  "
+                    class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+            </svg></div>
+    </div>
+</body>
+
+</html>
