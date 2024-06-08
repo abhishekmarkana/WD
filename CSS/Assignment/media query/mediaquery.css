@@ -1,0 +1,212 @@
+@media only screen and (min-width:600px) and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .header {
+        width: 600px;
+        height: 1000px;
+        clip-path: circle(75% at 50% 25%);
+    }
+
+    .nav {
+        gap: 190px;
+    }
+
+    .menu,
+    .menu i {
+        display: inline;
+        font-size: 30px;
+
+    }
+
+    .get-of {
+        border-radius: 15px;
+    }
+
+    .hadding {
+        margin-top: 80px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .ser {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    input {
+        width: 350px;
+        padding: 12px;
+    }
+
+    .try-it {
+        width: 350px;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    .graf {
+        height: 350px;
+        width: 500px;
+        background-size: 500px;
+        background-repeat: no-repeat;
+        margin-top: -350px;
+        margin-left: 50px;
+    }
+
+    .com-logo p {
+        padding-top: 100px;
+    }
+
+    .com-logo-2 {
+        margin-bottom: 60px;
+    }
+
+    .img {
+        width: 100px;
+    }
+
+    .col-1 {
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .col-2 {
+        height: 350px;
+        width: 280px;
+        top: 190px;
+        left: 250px;
+        font-size: 13px;
+    }
+
+    .btn-send {
+        margin-left: 170px;
+        height: 30px;
+        width: 80px;
+        padding: 8px;
+    }
+
+    .all-in {
+        margin-top: 150px;
+        margin-left: 80px;
+
+    }
+
+    .team {
+        text-align: center;
+        padding: 20px;
+        margin: 50px 0;
+    }
+
+    .team:hover {
+        border-bottom: 8px solid #794cff;
+        border-left: none;
+        border-bottom-right-radius: 0px;
+    }
+
+    .main-box {
+        padding-bottom: 0px;
+    }
+
+    .box {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* background-color: red; */
+    }
+
+    .view-btn {
+        display: block;
+        padding: 0 100px;
+        margin-bottom: 80px;
+    }
+
+    .in-view-btn {
+        width: 400px;
+    }
+
+    .section-4 {
+        flex-direction: column-reverse;
+    }
+
+    .we-work {
+        width: 600px;
+        text-align: center;
+        padding: 50px 100px;
+    }
+
+    .get-btn {
+        margin-left: 50px;
+        width: 300px;
+        padding: 20px 0;
+    }
+
+    .worked-graf {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .pro1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trust {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0;
+        margin: 80px 0px;
+        border-radius: 0;
+    }
+
+    .trust h2 {
+        margin: 0 30px;
+        text-align: center;
+    }
+
+    .storr-btn {
+        flex-direction: column;
+        margin-right: 20px;
+        gap: 30px;
+    }
+
+    .social-media {
+        margin-left: 0;
+    }
+
+    .cpyright-text {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .footer-information {
+        flex-direction: column;
+        gap: 60px;
+        padding: 90px;
+    }
+
+    .footer-information h4 {
+        display: inline;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .footer-information i {
+        display: inline;
+        color: #ffffff;
+    }
+
+}
