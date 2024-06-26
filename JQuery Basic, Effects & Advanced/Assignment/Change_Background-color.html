@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background-color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-color: #d3e7a0;
+            height: 730px;
+            width: 100%;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .com {
+            height: 400px;
+            width: 100px;
+        }
+
+        .div1 {
+            background-color: #7fff00;
+        }
+
+        .div2 {
+            background-color: #ff8000;
+        }
+
+        .div3 {
+            background-color: #a87aed;
+        }
+
+        .div4 {
+            background-color: #80454e;
+        }
+
+        .div5 {
+            background-color: #6e821e;
+        }
+
+        .div6 {
+            background-color: #71756d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1 com"></div>
+        <div class="div2 com"></div>
+        <div class="div3 com"></div>
+        <div class="div4 com"></div>
+        <div class="div5 com"></div>
+        <div class="div6 com"></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        $(".div1").click(function () {
+            $(".main").css("background-color", "#7fff00");
+        })
+    })
+
+    $(document).ready(function () {
+        $(".div2").click(function () {
+            $(".main").css("background-color", "#ff8000");
+        })
+    })
+
+    $(document).ready(function () {
+        $(".div3").click(function () {
+            $(".main").css("background-color", "#a87aed");
+        })
+    })
+
+    $(document).ready(function () {
+        $(".div4").click(function () {
+            $(".main").css("background-color", "#80454e");
+        })
+    })
+
+    $(document).ready(function () {
+        $(".div5").click(function () {
+            $(".main").css("background-color", "#6e821e");
+        })
+    })
+
+    $(document).ready(function () {
+        $(".div6").click(function () {
+            $(".main").css("background-color", "#71756d");
+        })
+    })
+
+</script>
+
+</html>

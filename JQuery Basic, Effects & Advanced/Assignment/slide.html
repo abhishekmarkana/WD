@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>slide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #808080;
+        }
+
+        .slide {
+            height: 400px;
+            width: 90%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 2px solid;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 150px;
+            margin: 80px auto;
+            background: #ffee00;
+        }
+
+        .main-btn {
+            width: auto;
+            height: 50px;
+            padding-left: 380px;
+        }
+
+        .btn {
+            background-color: #ffee00;
+            height: 100%;
+            width: 150px;
+            margin-left: 80px;
+            border-radius: 50px;
+            border: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide">
+        Slide Toggle /SlideUp /SlideDown
+    </div>
+    <div class="main-btn">
+        <button class="btn1 btn">SlideUp</button>
+        <button class="btn2 btn">SlideDown</button>
+        <button class="btn3 btn">Slide-Toggle</button>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn1").click(function () {
+            $(".btn1").css("background-color", "#ffffff");
+            $(".slide").slideUp();
+            $(".btn2, .btn3 ").css("background-color", "#ffee00");
+
+        });
+        $(".btn2").click(function () {
+            $(".btn2").css("background-color", "#ffffff");
+            $(".slide").slideDown();
+            $(".btn1, .btn3").css("background-color", "#ffee00");
+        });
+
+    });
+    $(document).ready(function () {
+        $(".btn3").click(function () {
+            $(".btn3").css("background-color", "#ffffff");
+            $(".slide").slideToggle();
+            $(".btn2,.btn1").css("background-color", "#ffee00");
+        });
+    });
+</script>
+
+</html>
