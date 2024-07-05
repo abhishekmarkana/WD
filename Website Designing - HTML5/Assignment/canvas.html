@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Side by Side</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            border: 2px solid orange;
+            border-radius: 3px;
+            align-items: center;
+            padding: 20px;
+            width: 31%;
+        }
+
+        #myCanvas1 {
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="myCanvas" width="150" height="200"></canvas>
+        <canvas id="myCanvas1" width="150" height="200"></canvas>
+        <canvas id="myCanvas2" width="150" height="200"></canvas>
+    </div>
+    <script>
+        // First canvas
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+
+        const gradient = context.createLinearGradient(0, 90, 100, 0);
+        gradient.addColorStop(0, 'orange'); // Starting color
+        gradient.addColorStop(1, 'red'); // Ending color
+
+        // Use the gradient for the fillStyle
+        context.fillStyle = gradient;
+        context.fillRect(0, 0, 100, 100);
+
+        // Second canvas
+        const canvas1 = document.getElementById('myCanvas1');
+        const context1 = canvas1.getContext('2d');
+
+        // Load and draw image inside a circular canvas
+        const img = new Image();
+        img.onload = function () {
+            context1.beginPath();
+            context1.arc(75, 75, 50, 0, 2 * Math.PI);
+            context1.closePath();
+            context1.clip();
+
+            // Draw the image
+            context1.drawImage(img, 25, 25, 100, 100);
+        };
+        img.src = 'https://cdn.tutsplus.com/cdn-cgi/image/width=360/active/uploads/legacy/tuts/008_colorPicker/Tutorial/8.jpg';
+
+
+        // Third canvas
+        const canvas2 = document.getElementById('myCanvas2');
+        const context2 = canvas2.getContext('2d');
+
+        // Draw a filled circle
+        context2.fillStyle = "#fccf7d";
+        context2.fillRect(0, 0, 200, 100)
+        context2.fill();
+    </script>
+</body>
+
+</html>
