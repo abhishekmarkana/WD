@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-com {
+    display: flex;
+}
+
+.background-img {
+    background: url(img/photo-1499951360447-b19be8fe80f5.avif);
+    background-size: cover;
+    background-position: center;
+    height: 730px;
+    width: 100%;
+    filter: blur(4px);
+    position: relative;
+}
+
+
+.section-1 {
+    position: absolute;
+    top: 0px;
+    align-items: center;
+    gap: 750px;
+}
+
+.aside {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 280px;
+    height: 730px;
+    color: #fff;
+}
+
+.aside h3 {
+    margin: 60px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    border: 5px ridge;
+}
+
+.aside ul li {
+    text-align: right;
+    margin-bottom: 19px;
+    margin-right: 130px;
+}
+
+.icon {
+    margin-top: 140px;
+    font-size: 18px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-com {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.icon i {
+    margin: 10px;
+    color: #000000;
+}
+
+.aside p {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.intro {
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+    background: rgb(255, 255, 255, 0.5);
+    border: 2px solid rgb(255, 255, 255, 0.3);
+}
+
+.intro h4 {
+    color: #2c639e;
+    margin-bottom: 30px;
+}
+
+.intro p,
+.about-us p,
+.company-profile p {
+    margin-bottom: 20px;
+
+}
+
+.section-2 {
+    gap: 150px;
+}
+
+.about-us,
+.company-profile {
+    width: 400px;
+    margin-top: 150px;
+}
+
+.about-us i,
+.company-profile i {
+    color: #2c639e;
+    font-size: 80px;
+}
+
+.about-us h4,
+.company-profile h4 {
+    color: #2c639e;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.aside-div {
+    height: 500px;
+}
+
+
+.section-3 {
+    gap: 150px;
+}
+
+.our-work {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    width: 900px;
+    height: 400px;
+    margin: 50px 0;
+}
+
+.our-work h4,
+.talk-to-us h4 {
+    margin: 50px 0 20px 45px;
+    color: #2c639e;
+    font-size: 20px;
+}
+
+.img-main {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.img {
+    height: 250px;
+    width: 180px;
+}
+
+.img1 {
+    background: url(img/img1.avif);
+    background-size: cover;
+}
+
+.img2 {
+    background: url(img/img2.avif);
+    background-size: cover;
+}
+
+.img3 {
+    background: url(img/img3.avif);
+    background-size: cover;
+}
+
+.img4 {
+    background: url(img/img4.avif);
+    background-size: cover;
+}
+
+.dotes,
+.dotes i {
+    margin: 15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.section-4 {
+    gap: 150px;
+}
+
+.col-1 {
+    height: 850px;
+}
+
+.col-2 {
+    margin: 50px;
+}
+
+.col-2 h4 {
+    color: #2c639e;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.col-2 p {
+    width: 800px;
+}
+
+.main-logo {
+    margin: 40px 0;
+    gap: 30px;
+    width: 830px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    width: 180px;
+    height: 80px;
+}
+
+
+.logo1 {
+    background: url(/img/logo1.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo2 {
+    background: url(/img/logo2.jpeg);
+    background-size: 380px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo3 {
+    background: url(/img/logo3.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo4 {
+    background: url(/img/logo4.jpeg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo5 {
+    background: url(/img/logo5.jpeg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo6 {
+    background: url(/img/logo6.jpeg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo7 {
+    background: url(/img/logp7.jpg);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo8 {
+    background: url(/img/logo8.jpeg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer {
+    margin-top: 100px;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.talk-to-us {
+    width: 400px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.talk-to-us p {
+    width: 400px;
+    padding: 20px 45px;
+}
+
+.regi {
+    display: flex;
+    flex-direction: column;
+}
+
+.regi input {
+    height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.regi textarea {
+    border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+.regi button {
+    width: 100px;
+    height: 30px;
+    margin: 20px 0 0 200px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
