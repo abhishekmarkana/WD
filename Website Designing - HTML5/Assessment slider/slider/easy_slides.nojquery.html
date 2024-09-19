@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Examples Easy Silder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="jquery.easy_slides.css" rel="stylesheet" type="text/css" />
+    <script src="easy_slides.js"></script>
+</head>
+
+<body>
+    <h1>Examples Easy Silder</h1>
+
+    <section>
+        <div class="slider slider_one_big_picture" id="slider-1">
+
+            <div class="next_button"></div>
+            <div class="prev_button"></div>
+            <div class="nav_indicators"></div>
+        </div>
+        <script>
+            EasySlides('.slider_one_big_picture',
+                {
+                    // 'autoplay': true,
+                    'stepbystep': false,
+                    'show': 5,
+                    'loop': true
+                });
+        </script>
+    </section>
+
+
+
+
+
+    <section>
+        <div class="slider slider_four_in_line" id="slider-main">
+        </div>
+        <div class="next_button"></div>
+        <div class="prev_button"></div>
+        </div>
+        <script>
+            EasySlides('.slider_four_in_line',
+                {
+                    // 'autoplay': true,
+                    'show': 9
+                }) 
+        </script>
+
+    </section>
+
+</body>
+<script>
+    // let arr = [
+    //     "img1.jpg", "img2.jpg", "img3.jpeg", "img4.jpeg", "img5.jpeg", "img6.jpeg", "img7.jpeg", "img8.jpeg"
+    // ];
+    // let tr = ''
+    // arr.map((i) => {
+    //     tr += `<img src=$(i)>`
+    // })
+
+    // document.getElementById("slider-1").innerHTML = tr
+
+    let arr = [
+        "img1.jpg", "img2.jpg", "img3.jpeg", "img4.jpeg", "img5.jpeg", "img6.jpeg", "img7.jpeg", "img8.jpeg"
+    ];
+    let tr = '';
+    arr.map((i) => {
+        tr += `<img src="${i}" alt="Slider image">`;
+    });
+
+    document.getElementById("slider-1").innerHTML = tr;
+
+    // Initialize EasySlides after adding images
+    EasySlides('.slider_one_big_picture', {
+        'stepbystep': false,
+        'show': 5,
+        'loop': true
+    });
+
+</script>
+
+</html>
