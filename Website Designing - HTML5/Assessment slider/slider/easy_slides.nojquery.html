@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="jquery.easy_slides.css" rel="stylesheet" type="text/css" />
     <script src="easy_slides.js"></script>
+    <style>
+
+    </style>
 </head>
+
 
 <body>
     <h1>Examples Easy Silder</h1>
@@ -21,7 +25,7 @@
         <script>
             EasySlides('.slider_one_big_picture',
                 {
-                    // 'autoplay': true,
+                    'autoplay': true,
                     'stepbystep': false,
                     'show': 5,
                     'loop': true
@@ -36,13 +40,13 @@
     <section>
         <div class="slider slider_four_in_line" id="slider-main">
         </div>
-        <div class="next_button"></div>
-        <div class="prev_button"></div>
+        <div class="next_button" onclick="nextimg()"></div>
+        <div class="prev_button" onclick="PREViMg()"></div>
         </div>
         <script>
             EasySlides('.slider_four_in_line',
                 {
-                    // 'autoplay': true,
+                    'autoplay': true,
                     'show': 9
                 }) 
         </script>
@@ -51,23 +55,17 @@
 
 </body>
 <script>
-    // let arr = [
-    //     "img1.jpg", "img2.jpg", "img3.jpeg", "img4.jpeg", "img5.jpeg", "img6.jpeg", "img7.jpeg", "img8.jpeg"
-    // ];
-    // let tr = ''
-    // arr.map((i) => {
-    //     tr += `<img src=$(i)>`
-    // })
-
-    // document.getElementById("slider-1").innerHTML = tr
 
     let arr = [
-        "img1.jpg", "img2.jpg", "img3.jpeg", "img4.jpeg", "img5.jpeg", "img6.jpeg", "img7.jpeg", "img8.jpeg"
+        "img-slider/img1.jpg", "img-slider/img2.jpg", "img-slider/img3.jpeg", "img-slider/img4.jpeg", "img-slider/img5.jpeg", "img-slider/img6.jpeg", "img-slider/img7.jpeg", "img8.jpeg"
     ];
     let tr = '';
     arr.map((i) => {
         tr += `<img src="${i}" alt="Slider image">`;
+        console.log(i);
+
     });
+
 
     document.getElementById("slider-1").innerHTML = tr;
 
