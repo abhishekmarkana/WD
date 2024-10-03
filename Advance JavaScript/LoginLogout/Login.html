@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: #d10ed1;
+        }
+
+        .main {
+            margin: 200px 600px;
+            width: 300px;
+            padding: 65px;
+            border-radius: 5px;
+            background-color: #fff;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            width: 165px;
+            padding: 9px;
+            border-radius: 5px;
+            font-size: 20px;
+            border: none;
+            background: #008000;
+            color: #fff;
+        }
+
+        input {
+
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="logout.html" name="myform" onsubmit="return validate()">
+        <div class="main">
+            <h1>Login</h1><br><br>
+            <label for="">Username</label><br>
+            <input type="text" id="userna">
+            <span id="unerror"></span><br><br>
+            <label for="">Password</label><br>
+            <input type="password" id="userpass">
+            <span id="upasserror"></span><br><br>
+            <br><br>
+
+            <button>Login</button>
+        </div>
+    </form>
+</body>
+<script>
+    let validate = () => {
+        let urnm = document.forms["myform"]["userna"].value;
+        let urname = /^[a-zA-Z]{6}$/
+        let userpass = document.forms["myform"]["userpass"].value;
+        let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}$/
+
+        if (urnm == "" || urnm == null) {
+            document.getElementById("unerror").innerHTML = 'plz fill username'
+            return false;
+        }
+
+        if (!urname.test(urnm)) {
+            document.getElementById("unerror").innerHTML = 'plz fill valid username'
+            return false;
+        }
+        else if (!passw.test(userpass)) {
+            document.getElementById("unerror").innerHTML = ''
+            document.getElementById("upasserror").innerHTML = 'plz fill strong password'
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+
+</html>

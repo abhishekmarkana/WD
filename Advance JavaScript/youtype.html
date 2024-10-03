@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtype</title>
+</head>
+
+<body>
+    <form action="" onkeyup="gettext()">
+        <input type="text" id="textin"><br><br>
+        <span>You type :</span> <span id="result"></span>
+    </form>
+</body>
+<script>
+    let gettext = () => {
+        document.querySelector("#result").innerHTML = document.querySelector("#textin").value;
+
+    }
+</script>
+
+</html>

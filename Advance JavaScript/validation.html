@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin: 50px 590px;
+            border: 2px solid;
+            width: 290px;
+            text-align: left;
+            padding: 18px;
+        }
+
+        div {
+            margin: 15px 0 0 0;
+        }
+
+        input,
+        select {
+            width: 280px;
+            height: 28px;
+            padding-left: 5px;
+
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+
+        .sub input {
+            background-color: #52b997;
+            height: 30px;
+            color: #fff;
+            font-size: 15px;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form class="Form" name="myform" onsubmit="return validate()">
+        <h1>Form Validation</h1>
+
+        <div class="fn">
+            <label for="">Full Name</label>
+        </div>
+        <input type="text" id="first">
+        <span id="fn-n"></span><br><br>
+
+
+        <div class="eadd">
+            <label for="">Email Address</label>
+        </div>
+        <input type="text" id="mail">
+        <span id="email-n"></span><br><br>
+
+        <div class="pass">
+            <label for="">Password</label>
+        </div>
+        <input type="password" id="userpass">
+        <span id="pas-n"></span><br><br>
+
+        <div class="bd">
+            <label for="">Birth Date</label>
+        </div>
+        <input type="date" id="bdate">
+        <span id="bir-day-n"></span><br><br>
+
+        <div class="gen">
+            <label for="">Gender</label>
+
+            <select name="" id="sel">
+                <option value="">Select your gender</option>
+                <option value="1"> Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+        </div>
+        <span id="selec-n"></span>
+        <br>
+
+        <div class="sub">
+            <input type="submit">
+        </div>
+
+
+    </form>
+</body>
+<script>
+    function validate() {
+        let firn = document.forms["myform"]["first"].value;
+        let name = document.getElementById("fn-n")
+        let alpha = /^[A-Za-z]+$/
+
+        if (firn == "" || firn == null) {
+            name.innerHTML = "Enter your Full Name";
+            name.style = "color:red";
+            document.getElementById("first").style = "border-color:red";
+            return false;
+        }
+
+        if (!alpha.test(firn)) {
+            name.innerHTML = "Enter Only A-Z";
+            name.style = "color:red";
+            document.getElementById("first").style = "border-color:red";
+            return false;
+        }
+        else {
+            name.innerHTML = ""
+            document.getElementById("first").style = "border:1px solid black";
+
+        }
+
+        let amail = document.forms["myform"]["mail"].value;
+        let e_mail = document.getElementById("email-n")
+        if (amail == "" || amail == null) {
+            e_mail.innerHTML = "Enter your email";
+            e_mail.style = "color:red";
+            document.getElementById("mail").style = "border-color:red";
+            return false;
+        }
+        let e_mi = /^[a-z0-9_]+@[a-z]+\.[a-z]{2,4}$/;
+        if (!e_mi.test(amail)) {
+            e_mail.innerHTML = "Enter velide email";
+            e_mail.style = "color:red";
+            document.getElementById("mail").style = "border-color:red";
+            return false;
+        }
+        else {
+            e_mail.innerHTML = ""
+            document.getElementById("mail").style = "border:1px solid black";
+
+        }
+
+        let userpass = document.forms["myform"]["userpass"].value;
+        let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}$/
+        let unpaas = document.getElementById("pas-n")
+        if (userpass == "" || userpass == null) {
+            unpaas.innerHTML = "Enter Strong Password";
+            unpaas.style = "color:red";
+            document.getElementById("userpass").style = "border-color:red";
+            return false;
+        }
+        if (!passw.test(userpass)) {
+            unpaas.innerHTML = "Enter Strong Password";
+            unpaas.style = "color:red";
+            document.getElementById("userpass").style = "border-color:red";
+            return false;
+        }
+        else {
+            unpaas.innerHTML = ""
+            document.getElementById("userpass").style = "border:1px solid black";
+
+        }
+        let Birthdate = document.forms["myform"]["bdate"].value;
+        let bdat = document.forms["myform"]["bdate"]
+        if (Birthdate == "" || Birthdate == null) {
+            bdat.style = "color:red ; border-color:red; "
+            return false;
+        }
+        else {
+            bdat.style = "border:1px solid black  ;color:black";
+        }
+
+        let selec = document.forms["myform"]["sel"].value;
+        let selc = document.forms["myform"]["sel"]
+        if (selec == "" || selec == null) {
+            selc.style = "border-color:red ;color:red";
+            return false;
+        }
+        else {
+            selc.style = "border:1px solid black ,color:black";
+        }
+    }
+</script>
+
+</html>

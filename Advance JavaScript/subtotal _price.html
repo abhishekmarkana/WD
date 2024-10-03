@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr td {
+            padding: 10px;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        button {
+            background-color: rgb(235, 83, 37);
+            color: #fff;
+            border: none;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" onkeyup="item_total()">
+
+        <tr>
+            <th>
+                Product Info
+            </th>
+            <th>
+                qunt
+            </th>
+            <th>
+                price <br> (per unit)
+            </th>
+            <th>
+                price <br> (sub total)
+            </th>
+        </tr>
+        <tr id="Remove1">
+            <td>
+                Fortunata Window Hardware - Decorative
+                Holdbacks - Mocha
+            </td>
+            <td>
+                <input type="text" id="unit-nos">
+            </td>
+            <td id="price-1">
+                $29.99
+            </td>
+            <td id="tot">
+
+            </td>
+            <td>
+                <button onclick="reMove(this)">Remove</button>
+            </td>
+        </tr>
+        <tr id="Remove2">
+            <td>
+                Woven Trellis Window Heardware - Clip Rings - Bronze
+            </td>
+            <td>
+                <input type="text" id="unit-nos-1">
+            </td>
+            <td id="price-2">
+                $12.990
+            </td>
+            <td id="tot-1">
+
+            </td>
+            <td>
+                <button onclick=" reMove_1()">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td id="sub">
+            </td>
+            <td>
+            </td>
+        </tr>
+
+    </table>
+</body>
+<script>
+    let item_total = () => {
+        let qunt = document.querySelector("#unit-nos").value
+        let price = document.querySelector("#price-1").innerText.replace('$', '')
+        console.log(price);
+
+        let ans = qunt * price;
+        document.querySelector("#tot").innerText = "$" + ans
+
+        let qunt_1 = document.querySelector("#unit-nos-1").value
+        let price_1 = document.querySelector("#price-2").innerText.replace('$', '')
+        let ans1 = qunt_1 * price_1;
+        document.querySelector("#tot-1").innerText = "$" + ans1
+
+        const subtotal = ans + ans1;
+        document.querySelector("#sub").innerText = "$" + subtotal;
+
+    }
+    let reMove = () => {
+        document.querySelector("#Remove1").innerHTML = ''
+    }
+    let reMove_1 = () => {
+        document.querySelector("#Remove2").innerHTML = ''
+    }
+    item_total()
+
+</script>
+
+</html>

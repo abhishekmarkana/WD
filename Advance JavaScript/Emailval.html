@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emailval</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        form {
+            margin: 200px 500px;
+        }
+
+        .input-box {
+            display: inline;
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+
+        input {
+            width: 200px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" name="myform" onkeyup="return validate()">
+
+        <label for="">Email<sup>*</sup></label>
+        <div class="input-box">
+            <input type="text" id="mail" placeholder="Enter your email "><span id="icon">
+                <i class="fa-regular fa-envelope" style="color: #707070;"></i>
+            </span>
+        </div>
+    </form>
+
+</body>
+<script>
+    let validate = () => {
+        var amail = document.forms["myform"]["mail"].value;
+        if (amail == "" || amail == null) {
+            alert('Please fill out the email');
+            return false;
+        }
+        var bmail = /^[a-z0-9_]+@[a-z]+\.[a-z]{2,4}$/;
+        if (!bmail.test(amail)) {
+            document.querySelector("#icon").innerHTML = ' <i class="fa-regular fa-envelope" style="color: red;"></i>'
+            return false;
+        } else {
+            document.getElementById("icon").innerHTML = ' <i class="fa-regular fa-circle-check" style="color: #08e735;"></i>'
+            return false;
+        }
+    }
+</script>
+
+</html>

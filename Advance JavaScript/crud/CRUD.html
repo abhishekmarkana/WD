@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            margin-top: 90px;
+            text-align: center;
+        }
+
+        input {
+            margin: 50px 0 80px 0;
+            height: 30px;
+            width: 250px;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>CRUD With LocalStorage</h1>
+        <form action="" name="myfrm" onsubmit="return Additem()">
+            <input type="hidden" id="hidden_id" name="hidden_id">
+            <input type="text" placeholder="Enter item" id="inputval" name="inputval">
+            <button type="submit" class="btn">Add item</button>
+        </form>
+        <h2>Items:</h2>
+        <div id="item-dis">
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="CRUD.js"></script>
+
+</html>
